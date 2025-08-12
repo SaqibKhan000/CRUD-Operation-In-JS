@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUS Operation In JS By M Saqib Khan</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1 class="main-h1">CRUD Operation In JS</h1>
+      <form action="">
+        <div class="name-email">
+          <input type="text" placeholder="Full Name" id="name" required />
+          <input type="email" placeholder="Email Address" id="email" required />
+        </div>
+        <!--name-email-end-->
+        <div class="password-phone">
+          <input type="text" placeholder="Phone Number" id="phone-no" required />
+        </div>
+        <!--password-phone-end-->
+        <div class="brows-img">
+          <input type="file" required id="user-img" />
+        </div>
+        <!--brows-img-end-->
+        <div class="gender">
+            <h5>Gender:</h5>
+       <div class="radio-button-main-div">
+    <div class="person">
+             <input type="radio" value="Male" name="human" class="radio-button" required id="male">
+            <label for="male">Male</label>
+           </div><!--gender1-end-->
+              <div class="person">
+             <input type="radio" value="Female" name="human" class="radio-button" required id="female">
+            <label for="female">Female</label>
+           </div><!--gender2-end-->
+              <div class="person">
+             <input type="radio" value="Other" name="human" class="radio-button" required id="other">
+            <label for="other">Other</label>
+           </div><!--gender3-end-->
+       </div><!--radio-button-main-div-->
+        </div><!--gender-end-->
+        <input type="submit" value="Submit" class="submit" /> 
+      </form>
+
+
+
+
+
+
+
+
+      <div class="table-main-div">
+     <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Image</th>
+                <th>Gender</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        
+
+        <tbody class="table-body">
+      <tr class="temporary-tr">
+        <td colspan="8">
+          <div style="display: flex;
+          align-items: center;
+          justify-content: center; column-gap: 10px;">
+          <span style="font-size: 20px; color: rgba(128, 128, 128, 0.846); font-weight: 600;">No records yet</span>
+          <i class="ri-sticky-note-line" style="
+              font-size: 45px;
+              color: rgba(128, 128, 128, 0.625);
+          "></i>  
+            </div>
+        </td>
+      </tr>
+        </tbody>
+     </table>
+      </div><!--main-table-div-->
+    </div>
+    <!--main-div-end-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
