@@ -28,7 +28,7 @@ function submitForm(e) {
     editingRow.children[5].textContent = radioButtonValue;
     editingRow = null;
   } else {
-    id = id + 1;
+    id++;
 
     userImg.setAttribute("src", URL.createObjectURL(userFile.files[0]));
     radioButtons.forEach((radioButton) => {
